@@ -22,9 +22,38 @@
 #main{
     padding:10px;
     margin:0 auto;
+    text-align:right;
 }
 
 #footer{
     text-align:center;
     font-variant:small-caps;
+    clear:right;
+    height:100px;
+    background-color:gray;
+    text-shadow:1px 1px 1px #333;
+    color:#fff
+}
+
+#nav li{
+    float:left;
+    padding:8px 15px;
+    border-right:1px solid white;
+    float:right;
+    
+    
+}
+
+#nav li a{
+    text-decoration:none;
+    font-weight:bold;  
+    color:white;
+    
+  
+}
+
+#nav li a:hover{
+    color:red;
+    background-color:white;
+
 }
