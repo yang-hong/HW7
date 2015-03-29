@@ -4,9 +4,10 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title>League of Legends Communication</title>
+    <title>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
+    </title>
     <link rel="stylesheet" type="text/css" href="./style.css" />
 </head>
 <body>
@@ -17,7 +18,7 @@
                 <h4>A way to communicate with League of Legends Players all over the world!</h4>
             </div>
             <div id="left_header">
-                <img src="./logo2.png" height="150px" style="width: 452px; margin-left: 241px" />
+                <img src="./logo2.png" style="width: 884px; margin-left: 2px; height: 218px;" />
             </div>
         </div>
 
