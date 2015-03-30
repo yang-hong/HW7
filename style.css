@@ -58,20 +58,67 @@
 
 }
 
-
-#GridView1 { width:100%; border:solid 1px #525252; bordercollapse:
-collapse; text-align:center; font-family: "Comic Sans MS"; color: #A640DF;
+.cssgridview { width:100%; border:solid 1px #525252; border-collapse:
+collapse; text-align:center; font-family: "Comic Sans MS"; color: white;
 background-color: black}
 
-#GridView1 td {
+.cssgridview td {
     background-color:black;
     padding:10px;
+    border:solid 1px #525252;
  
 
 }
 
-#GridView1 th{
-    background-color:blue;
+.cssgridview th{
+    background-color:yellow;
     padding:10px;
     height: 50px;
+    color:black;
+    border:solid 1px #525252;
 }
+
+.cssgridview .alt{
+    color:#D6C014;
+}
+
+.cssgridview .pgr {
+    color:yellow;
+    border-style:none;
+}
+
+.cssgridview .pgr table { margin: 5px 0; border-style:none; text-align:center; float:right;}
+
+.cssgridview .pgr td { border-width: 0; padding: 0 6px; border-left: solid 1px #666;
+font-weight: bold; color: #fff; line-height: 12px; }
+
+.cssdetailsview { font-family: "Comic Sans MS"; background-color:black;  border:solid 1px #525252; border-collapse:
+collapse; text-align:center; margin:5px 0 10px 362px; margin:0 auto;
+}
+
+.cssdetailsview td {
+    padding:10px;
+    border:solid 1px  #525252;
+    text-align:left;
+}
+
+.cssdetailsview .header td { text-align:center; padding:4px 2px; color:black; 
+background-color: yellow; border-left:solid 1px #525252;line-height: 20px; }
+
+.cssdetailsview .fieldheader { color:white; width:450px; text-align:right;line-height: 20px; font-weight:bold;}
+
+.cssdetailsview .item {text-align:left;}
+
+.cssdetailsview .command { background-color:yellow; border-style:none;
+
+}
+
+.cssdetailsview .command td {
+        text-align: center; padding:0 6px; border-left:solid 1px white;
+        font-weight:bold;
+ 
+    } 
+
+.cssdetailsview .command a {color:black; text-decoration:none; padding:10px; }
+
+.cssdetailsview .command a:hover{color:red; background-color:white;}

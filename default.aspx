@@ -38,12 +38,16 @@
                 <asp:Parameter Name="ID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" CssClass="cssgridview" AllowPaging="True" PageSize="5" AlternatingRowStyle-CssClass="alt" PagerStyle-CssClass="pgr">
+<AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
             <Columns>
                 <asp:BoundField DataField="lol_name" HeaderText="lol Name" SortExpression="lol_name" />
                 <asp:BoundField DataField="ranked_tier" HeaderText="Ranked Tier" SortExpression="ranked_tier" />
                 <asp:BoundField DataField="introduction" HeaderText="Introduction" SortExpression="introduction" />
+                <asp:HyperLinkField DataNavigateUrlFields="ID" DataNavigateUrlFormatString="playerDetails.aspx?ID={0}" Text="View" />
             </Columns>
+
+<PagerStyle CssClass="pgr"></PagerStyle>
         </asp:GridView>
     </p>
     <p>
