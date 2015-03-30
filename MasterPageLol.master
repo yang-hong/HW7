@@ -27,6 +27,7 @@
                 <li><asp:HyperLink ID="link_Home" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_add" runat="server" NavigateUrl="~/newPlayer.aspx">Add Your Information</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_Information" runat="server" NavigateUrl="~/admin/default.aspx">Your Information</asp:HyperLink></li>
+                <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
             </ul>
         </div>
 
