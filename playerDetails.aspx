@@ -8,7 +8,7 @@
         <br />
     </p>
     <p>
-        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" 
+        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:yang_HW7_lol %>" 
            
             SelectCommand="SELECT * FROM [yang_HW7_lol] WHERE ([ID] = @ID)" >
             

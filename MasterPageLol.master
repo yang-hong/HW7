@@ -24,9 +24,9 @@
 
         <div id="menu">
             <ul id="nav">
-                <li><a href="./default.aspx">Home</a></li>
-                <li><a href="./newPlayer.aspx">Add Your Information</a></li>
-                <li><a href="./admin/default.aspx">Your Information</a></li>
+                <li><asp:HyperLink ID="link_Home" runat="server" NavigateUrl="~/default.aspx">Home</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_add" runat="server" NavigateUrl="~/newPlayer.aspx">Add Your Information</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_Information" runat="server" NavigateUrl="~/admin/default.aspx">Your Information</asp:HyperLink></li>
             </ul>
         </div>
 
