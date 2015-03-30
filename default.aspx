@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPageLol.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" %>
+﻿<%@ Page Title="" Language="VB" AutoEventWireup="false" CodeFile="default.aspx.vb" MasterPageFile="~/MasterPageLol.master" Inherits="_default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     League of Legends Communication
