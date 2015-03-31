@@ -1,17 +1,11 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPageLol.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="_default" %>
+﻿<%@ Page Title="" Language="VB" AutoEventWireup="false" CodeFile="search.aspx.vb" MasterPageFile="~/MasterPageLol.master" Inherits="_default" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
     League of Legends Communication
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <p>
-        &nbsp;</p>
-    <p>
-        <span style="font-size:large;font-weight:bold;">Welcome Back!<asp:LoginName runat="server" />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </span>
-        <asp:HyperLink ID="HyperLink1" runat="server" BorderStyle="Ridge" NavigateUrl="~/admin/siteManger/edit_user.aspx">Manage Users</asp:HyperLink>
-        <asp:HyperLink ID="HyperLink4" runat="server" BorderStyle="Ridge" NavigateUrl="~/admin/siteManger/add_user.aspx">Add Users</asp:HyperLink>
-        <asp:HyperLink ID="HyperLink5" runat="server" BorderStyle="Ridge" NavigateUrl="~/admin/siteManger/users_by_role.aspx">Users By Roles</asp:HyperLink>
-        <asp:HyperLink ID="HyperLink2" runat="server" BorderStyle="Ridge" NavigateUrl="~/admin/siteManger/roles.aspx">Manage Roles</asp:HyperLink>
+        <br />
     </p>
     <p>
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:yang_HW7_lol %>" DeleteCommand="DELETE FROM [yang_HW7_lol] WHERE [ID] = @ID" InsertCommand="INSERT INTO [yang_HW7_lol] ([lol_name], [ranked_tier], [games_played], [win_rate], [best_champains], [best_champains_win_rate], [main_role], [prefer_mode], [introduction], [contact_info]) VALUES (@lol_name, @ranked_tier, @games_played, @win_rate, @best_champains, @best_champains_win_rate, @main_role, @prefer_mode, @introduction, @contact_info)" SelectCommand="SELECT * FROM [yang_HW7_lol]" UpdateCommand="UPDATE [yang_HW7_lol] SET [lol_name] = @lol_name, [ranked_tier] = @ranked_tier, [games_played] = @games_played, [win_rate] = @win_rate, [best_champains] = @best_champains, [best_champains_win_rate] = @best_champains_win_rate, [main_role] = @main_role, [prefer_mode] = @prefer_mode, [introduction] = @introduction, [contact_info] = @contact_info WHERE [ID] = @ID">

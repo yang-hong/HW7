@@ -28,6 +28,7 @@
                 <li><asp:HyperLink ID="link_contact" runat="server" NavigateUrl="~/contactForm/default.aspx">Contact</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_about" runat="server" NavigateUrl="~/about.aspx">About</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_add" runat="server" NavigateUrl="~/newPlayer.aspx">Add Your Information</asp:HyperLink></li>
+                <li><asp:HyperLink ID="link_search" runat="server" NavigateUrl="~/search.aspx">Search Players</asp:HyperLink></li>
                 <li><asp:HyperLink ID="link_Information" runat="server" NavigateUrl="~/admin/default.aspx">Your Information</asp:HyperLink></li>
                 <li><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
             </ul>
@@ -42,6 +43,10 @@
     </div>
 
     <div id="footer">
+        <br />
+        Today Is: <asp:Label ID="lbl_time" runat="server" BorderColor="Fuchsia" Height="42px" Width="171px" Font-Size="Large" ForeColor="#FF0066"></asp:Label>
+        <br />
+        <br />
         &copy; 2015 MSCI:3300 -Software Design and Development
         <br />
         
