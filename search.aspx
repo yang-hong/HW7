@@ -5,6 +5,12 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <p>
+        &nbsp;</p>
+    <p>
+        &nbsp;</p>
+    <p>
+        <span class="search"><asp:Label ID="Label1" runat="server" Text="Search Players By lol Name"></asp:Label></span>
+        &nbsp;<asp:TextBox ID="tb_lol" runat="server"></asp:TextBox>
         <br />
     </p>
     <p>
@@ -38,7 +44,7 @@
                 <asp:Parameter Name="ID" Type="Int32" />
             </UpdateParameters>
         </asp:SqlDataSource>
-        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" CssClass="cssgridview" AllowPaging="True" PageSize="5" AlternatingRowStyle-CssClass="alt" PagerStyle-CssClass="pgr">
+        <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="ID" DataSourceID="SqlDataSource1" CssClass="cssgridview" AllowPaging="True" PageSize="5" AlternatingRowStyle-CssClass="alt" PagerStyle-CssClass="pgr" AllowSorting="True">
 <AlternatingRowStyle CssClass="alt"></AlternatingRowStyle>
             <Columns>
                 <asp:BoundField DataField="lol_name" HeaderText="lol Name" SortExpression="lol_name" />
