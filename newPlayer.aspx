@@ -36,8 +36,23 @@ ItemStyle-CssClass="item"
 AlternatingRowStyle-CssClass="altrow"
 CommandRowStyle-CssClass="command"
 PagerStyle-CssClass="pager" DefaultMode="Insert" >
+<AlternatingRowStyle CssClass="altrow"></AlternatingRowStyle>
+
+<CommandRowStyle CssClass="command"></CommandRowStyle>
+
+<FieldHeaderStyle CssClass="fieldheader"></FieldHeaderStyle>
             <Fields>
-                <asp:BoundField DataField="lol_name" HeaderText="lol Name" SortExpression="lol_name" />
+                <asp:TemplateField HeaderText="lol Name" SortExpression="lol_name">
+                    <EditItemTemplate>
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("lol_name") %>'></asp:TextBox>
+                    </EditItemTemplate>
+                    <InsertItemTemplate>
+                        <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("lol_name") %>'></asp:TextBox> 
+                    </InsertItemTemplate>
+                    <ItemTemplate>
+                        <asp:Label ID="Label1" runat="server" Text='<%# Bind("lol_name") %>'></asp:Label>
+                    </ItemTemplate>
+                </asp:TemplateField>
                 <asp:BoundField DataField="ranked_tier" HeaderText="Ranked Tier" SortExpression="ranked_tier" />
                 <asp:BoundField DataField="games_played" HeaderText="Games Played" SortExpression="games_played" />
                 <asp:BoundField DataField="win_rate" HeaderText="Win Rate" SortExpression="win_rate" />
@@ -49,7 +64,12 @@ PagerStyle-CssClass="pager" DefaultMode="Insert" >
                 <asp:BoundField DataField="contact_info" HeaderText="Contact Info" SortExpression="contact_info" />
                 <asp:CommandField ShowDeleteButton="False" ShowEditButton="False" ShowInsertButton="True" />
             </Fields>
+
+<HeaderStyle CssClass="header"></HeaderStyle>
+
+<PagerStyle CssClass="pager"></PagerStyle>
         </asp:DetailsView>
+        
     </p>
 </asp:Content>
 
