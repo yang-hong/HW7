@@ -42,7 +42,7 @@ PagerStyle-CssClass="pager" DefaultMode="Insert" >
 
 <FieldHeaderStyle CssClass="fieldheader"></FieldHeaderStyle>
             <Fields>
-                <asp:TemplateField HeaderText="lol Name" SortExpression="lol_name">
+                <asp:TemplateField HeaderText="lol Name*" SortExpression="lol_name">
                     <EditItemTemplate>
                         <asp:TextBox ID="TextBox1" runat="server" Text='<%# Bind("lol_name") %>'></asp:TextBox>
                     </EditItemTemplate>
@@ -53,7 +53,7 @@ PagerStyle-CssClass="pager" DefaultMode="Insert" >
                         <asp:Label ID="Label1" runat="server" Text='<%# Bind("lol_name") %>'></asp:Label>
                     </ItemTemplate>
                 </asp:TemplateField>
-                <asp:BoundField DataField="ranked_tier" HeaderText="Ranked Tier" SortExpression="ranked_tier" />
+                <asp:BoundField DataField="ranked_tier" HeaderText="Ranked Tier*" SortExpression="ranked_tier" />
                 <asp:BoundField DataField="games_played" HeaderText="Games Played" SortExpression="games_played" />
                 <asp:BoundField DataField="win_rate" HeaderText="Win Rate" SortExpression="win_rate" />
                 <asp:BoundField DataField="best_champains" HeaderText="Best Champains" SortExpression="best_champains" />

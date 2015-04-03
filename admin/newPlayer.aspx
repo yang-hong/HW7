@@ -36,9 +36,14 @@ ItemStyle-CssClass="item"
 AlternatingRowStyle-CssClass="altrow"
 CommandRowStyle-CssClass="command"
 PagerStyle-CssClass="pager" DefaultMode="Insert" >
+<AlternatingRowStyle CssClass="altrow"></AlternatingRowStyle>
+
+<CommandRowStyle CssClass="command"></CommandRowStyle>
+
+<FieldHeaderStyle CssClass="fieldheader"></FieldHeaderStyle>
             <Fields>
-                <asp:BoundField DataField="lol_name" HeaderText="lol Name" SortExpression="lol_name" />
-                <asp:BoundField DataField="ranked_tier" HeaderText="Ranked Tier" SortExpression="ranked_tier" />
+                <asp:BoundField DataField="lol_name" HeaderText="lol Name*" SortExpression="lol_name" />
+                <asp:BoundField DataField="ranked_tier" HeaderText="Ranked Tier*" SortExpression="ranked_tier" />
                 <asp:BoundField DataField="games_played" HeaderText="Games Played" SortExpression="games_played" />
                 <asp:BoundField DataField="win_rate" HeaderText="Win Rate" SortExpression="win_rate" />
                 <asp:BoundField DataField="best_champains" HeaderText="Best Champains" SortExpression="best_champains" />
@@ -49,6 +54,10 @@ PagerStyle-CssClass="pager" DefaultMode="Insert" >
                 <asp:BoundField DataField="contact_info" HeaderText="Contact Info" SortExpression="contact_info" />
                 <asp:CommandField ShowDeleteButton="False" ShowEditButton="False" ShowInsertButton="True" />
             </Fields>
+
+<HeaderStyle CssClass="header"></HeaderStyle>
+
+<PagerStyle CssClass="pager"></PagerStyle>
         </asp:DetailsView>
     </p>
 </asp:Content>
