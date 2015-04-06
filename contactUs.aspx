@@ -1,14 +1,16 @@
-﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPageLol.master" AutoEventWireup="false" CodeFile="default.aspx.vb" Inherits="contactUs" %>
+﻿<%@ Page Title="" Language="VB" MasterPageFile="~/MasterPageLol.master" AutoEventWireup="false" CodeFile="contactUs.aspx.vb" Inherits="contactUs" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+    contact
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
-     <br />
-     <br />
-     <br />
     <div id="contact">
-     <!-- Check to see if you are in postback.  If not, display the contact form. -->
+    <!-- Check to see if you are in postback.  If not, display the contact form. -->
         <% If Not IsPostBack Then%>
+
+        <br />
+        <br />
+        <br />
 
         Your name:<br />
         <asp:TextBox ID="senderName" runat="server" placeholder="First and last name" ></asp:TextBox>
